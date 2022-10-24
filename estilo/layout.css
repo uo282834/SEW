@@ -1,0 +1,40 @@
+/*****************
+ Autor: Alonso Antuña Gómez - UO282834
+ Descripción de la hoja de estilo:
+ ******************/
+
+ body{
+    display: flex;
+    flex-direction: column;
+}
+body header{
+    display: flex;
+    justify-content: center;
+}
+body nav{
+    display : flex;
+    justify-content: center;
+}
+body main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body footer{
+    display: grid;
+    justify-content: center;
+}
+
