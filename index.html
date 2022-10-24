@@ -4,8 +4,9 @@
     <!--Metadatos de los documentos HTML5-->
     <meta charset="UTF-8" />
     <meta name ="author" content ="Alonso Antuña Gómez" />
-    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
-    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+    <meta name ="description" content ="Pagina principal, contenido principal sobre ASP.NET Core y enlace a las demas partes,
+    video sobre proyectos con ASP.NET y una pequeña introduccion" />
+    <meta name ="keywords" content ="Introducción,ASP.NET Core, Proyectos,Enlaces" />
     <!--Definición de la ventana gráfica-->
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
     <title>Web sobre ASP.NET Core - Inicio</title>
@@ -15,27 +16,37 @@
 
 </head>
 <body>
-    <header>
-        <img src= "multimedia/imagenes/asp1.jpg" alt= "ASP NET Core 1" />
-        <h1>
-            ASP.NET Core
-        </h1>
-        <img src= "multimedia/imagenes/asp2.png" alt= "ASP NET Core 2" />
+        <header>
+            <img src= "multimedia/imagenes/asp1.jpg" alt= "ASP NET Core 1" />
+            <h1>
+               ASP.NET Core
+         </h1>
+            <img src= "multimedia/imagenes/asp2.png" alt= "ASP NET Core 2" />
 
-    </header>
-        <nav>
-            <a tabindex="1" title = "Inicio" accesskey="I" href="index.html">Inicio</a>
-            <a tabindex="2" title = "Historia" accesskey="H" href="historia.html">Historia</a>
-            <a tabindex="3" title = "Versiones" accesskey="V" href="versiones.html">Versiones</a>
-            <a tabindex="4" title = "Formulario" accesskey="O" href="dudas.html">Formulario</a>
-        </nav>
+        </header>
+            <nav>
+             <a tabindex="1" title = "Inicio" accesskey="I" href="index.html">Inicio</a>
+             <a tabindex="2" title = "Historia" accesskey="H" href="historia.html">Historia</a>
+             <a tabindex="3" title = "Versiones" accesskey="V" href="versiones.html">Versiones</a>
+             <a tabindex="4" title = "Formulario" accesskey="O" href="dudas.html">Formulario</a>
+            </nav>
     <main>
     <h2> ¿Qué es ASP.NET Core? </h2>
         <p> ASP.NET Core es un framework web gratis de código abierto y con un mayor rendimiento que ASP.NET,3 desarrollado por Microsoft y la comunidad.4 Es un framework modular que se ejecuta completo tanto en el.NET Framework de Windows como en multiplataforma.
             Sin embargo ASP.NET versión Core 3 sólo funciona en .NET Core dejando el soporte de .NET Framework.
+        </p>
+        <p>
             El framework se reescribió por completo unificando aquello anteriormente separado ASP.NET MVC y ASP.Web NET API a un modelo de programación único. 
-             Originalmente considerado ASP.NET vNext, el framework se iba a llamar ASP.NET 5 cuando estuviera listo. 
-            Pero para evitar que se considerara como una actualización del ya existente framework de ASP.NET, Microsoft más tarde cambió el nombre a ASP.Core en la liberación 1.0.6
+            Originalmente considerado ASP.NET vNext, el framework se iba a llamar ASP.NET 5 cuando estuviera listo. 
+        </p>
+        <p>
+            Pero para evitar que se considerara como una actualización del ya existente framework de ASP.NET, Microsoft más tarde cambió el nombre a ASP.Core en la liberación 1.0.6.
+            .NET Core es una nueva versión modular del framework .NET que permite el uso multiplataforma de .NET. Es un subconjunto del framework .NET por lo que no tiene toda la funcionalidad del framework completo, y puede emplearse para creación de aplicaciones web, de escritorio y móviles.
+        </p>
+        <p>    
+            El uso del framework completo nos permitirá poder añadir cualquier dependencia que necesitemos del framework, pero perderemos todas las ventajas que tienen las aplicaciones .NET Core, tales como la multiplataforma, la mejora del rendimiento, el menor tamaño de las aplicaciones, etc.
+            ASP.NET Core esta compuesto por más de 95 paquetes Nuget independientes que permiten usar solo las funciones deseadas sin estar obligado a usar todas las características del framework. Al estar compuesto por demasiados paquetes es posible que hayas pensado que es necesario aprenderse 
+            cada uno de los paquetes pero te comento que a partir de la version 2.0 no es necesario ya que existen los metapaquetes que se encargan de referenciar todos los paquetes necesarios para una aplicación web.
         </p> 
     </main>
         <article>
@@ -47,12 +58,18 @@
                             ASP.NET es un marco web gratuito para crear excelentes sitios web y aplicaciones web mediante HTML, CSS y JavaScript.
                             También puede crear API web y usar tecnologías en tiempo real como Web Sockets. ASP.NET Core es una alternativa a ASP.NET.
                          </p>
+                         <p>
+                            Se ejecuta en sistemas operativos Windows, macOS y Linux. Con .NET Core puede hacer cualquier tipo de aplicación que se ejecute 
+                            en cualquier plataforma. Los desarrolladores pueden reutilizar habilidades y codificar en todos ellos en un entorno familiar desde 
+                            aplicaciones móviles que se ejecutan en iOS, Android y Windows, hasta aplicaciones de servidor empresarial que se ejecutan en Windows Server y Linux, 
+                            o microservicios a gran escala que se ejecutan en la nube, .NET Core proporciona una solución para usted.
+                         </p>
                 </aside>
             <section>
             <h2>Enlaces de referencia</h2>
-                <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 1 </a></p>
-                <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 2</a></p>
-                <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 3</a></p>
+                <a href="https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-6.0">Documentación sobre ASP.NET Core</a>
+                <a href="https://es.wikipedia.org/wiki/ASP.NET_Core">Introducción a ASP.NET Core</a>
+                <a href="https://imaginaformacion.com/tutoriales/aprende-aspnet-core-tutorial-de-primeros-pasos">Tutoriales</a>
             </section>
         </article>
     <!--Icono de cumplimiento de los estándares-->

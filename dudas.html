@@ -4,8 +4,9 @@
     <!--Metadatos de los documentos HTML5-->
     <meta charset="UTF-8" />
     <meta name ="author" content ="Alonso Antuña Gómez" />
-    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
-    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+    <meta name ="description" content ="Pagina secundaria, formulario de dudas sobre ASP.NET Core y enlace a las demas partes,
+    formulario ASP.NET." />
+    <meta name ="keywords" content ="Formulario,ASP.NET Core,Enlaces" />
     <!--Definición de la ventana gráfica-->
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
     <title>Web sobre ASP.NET Core - Formulario de dudas</title>
@@ -35,28 +36,27 @@
         <p>Apellido<input id = "apellido" type="text"></p>
         <p>Fecha nacimiento<input id = "fecha" type="date"></p>
         <p><label id = "duda">¿Sobre que tienes duda?</label></p>
-        <p><input id = "historia" type="checkbox"
-        value="Historia">Historia de ASP.NET Core</p>
-        <p><input id = "versiones" type="checkbox"
-        value="Versiones">Versiones de ASP.NET Core</p>
-        <p><input id = "todas" type = "checkbox"
-        value="todas" checked>Todas las anteriores</p>
+        <p><input id = "historia" type="checkbox" value="Historia">Historia de ASP.NET Core</p>
+        <p><input id = "versiones" type="checkbox" value="Versiones">Versiones de ASP.NET Core</p>
+        <p><input id = "programación" type="checkbox" value="programación">Programar en ASP.NET Core</p>
         <p><textarea cols="15" rows="6" ></textarea>
-        <p><input id = "submit" type="button"
-        value="Envía tu duda!">
+        <p><input id = "submit" type="button" value="Envía tu duda!">
         </form>
     </main>
         <article>
             <h2>Enlaces de referencia</h2>
-            <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 1</a></p>
-            <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 2</a></p>
-            <p><a href="https://learn.microsoft.com/es-es/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0">Historia ASP.NET Core 3</a></p>
+            <a href="https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-6.0">Documentación sobre ASP.NET Core</a>
+            <a href="https://es.wikipedia.org/wiki/ASP.NET_Core">Introducción a ASP.NET Core</a>
+            <a href="https://imaginaformacion.com/tutoriales/aprende-aspnet-core-tutorial-de-primeros-pasos">Tutoriales</a>
         </article>  
     <!--Icono de cumplimiento de los estándares-->
 
     <footer>
-        <img src= "multimedia/imagenes/HTML5.png" alt= "HTML5 válido!" />
-        <img src= "multimedia/imagenes/CSS3.png" alt= "CSS3 válido!" />
+        <img
+            src="multimedia/imagenes/CSS3.png"
+            alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" />
+        <img src="multimedia/imagenes/HTML5.png"
+               alt="Valid CSS!" height="31" width="88" />
     </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
  Descripción de la hoja de estilo:
  ******************/
 
- body{
+body{
     display: flex;
     flex-direction: column;
 }
@@ -16,12 +16,6 @@ body nav{
     justify-content: center;
 }
 body main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-body section{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,6 +34,11 @@ body footer{
 body article{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body article section{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }

@@ -12,20 +12,28 @@ h1{
     font-size: 2.5em;
 }
 h2{
-    font-size: 1em;  
+    font-size: 1.5em;  
     padding: 2.5em;
     margin: 1em;  
     border-radius: 180%;
-    text-align: center;
     background-color: rgb(235, 94, 69);
 }
 header{
     background-color: tomato;
     padding: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
     
+}
+p{
+    margin-left: 2em;
+    margin-right: 2em;
 }
 nav{
     background-color: rgb(133, 128, 128);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 a {
     margin: 0.7em;
@@ -34,6 +42,9 @@ a {
     background-color: rgb(183, 177, 177);
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+a:hover{
+    color: rgb(194, 102, 9);
 }
 article a{
     margin: 0.7em;
@@ -44,23 +55,67 @@ article a{
     text-decoration: none;
 }
 form{
-    margin: 1em;
-	padding:1.9em;
+	padding:2.5em;
+    font-size: 1.1em;
 	border-radius:0.8em;
 	background-color:#ccc;
 }
 form label{
 	width:2.2em;
-	font-weight:bold;
 }
 
 footer{
     margin: 1.3em;
 }
 video{
+    max-width: 65%;
+    max-height: 65%;
     width: 100%;
     height: auto;
 }
+img{
+    min-width: 10%;
+    min-height: 10%;
+}
+
+table {
+    font-family:Georgia,serif,Times; 
+    font-size:1em; 
+    border-radius: 1em;
+    background-color: rgb(183, 177, 177);
+    padding:2em;
+}
+ 
+td, th {
+    background-color: rgb(130, 126, 126);
+    border-radius: 1em;
+    padding: 1em;
+}
+ol{
+    font-family:Georgia,serif,Times; 
+    font-size:1em; 
+    border-radius: 1em;
+    background-color: rgb(183, 177, 177);
+    padding:2em;
+}
+li,ul{ 
+    border-radius: 1em;
+    font-family:Georgia,serif,Times; 
+    font-size:1em; 
+    background-color: rgb(130, 126, 126);
+}
+
+ul li{
+    width:25em; 
+    height:2em; 
+    border-radius: 2em;
+    padding-left:0.5em;
+    margin: 0.5em;
+    text-decoration:none; 
+    color:#202121; 
+}
+
+
 
 
   
