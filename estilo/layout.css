@@ -37,4 +37,10 @@ body footer{
     display: grid;
     justify-content: center;
 }
+body article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
