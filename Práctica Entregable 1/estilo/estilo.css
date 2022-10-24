@@ -1,0 +1,66 @@
+/*****************
+ Autor: Alonso Antuña Gómez - UO282834
+ Descripción de la hoja de estilo:
+ ******************/
+html{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(195, 195, 204);
+}
+h1{
+    color: white;
+    margin: 1.5em;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 1em;  
+    padding: 2.5em;
+    margin: 1em;  
+    border-radius: 180%;
+    text-align: center;
+    background-color: rgb(235, 94, 69);
+}
+header{
+    background-color: tomato;
+    padding: 1.5em;
+    
+}
+nav{
+    background-color: rgb(133, 128, 128);
+}
+a {
+    margin: 0.7em;
+    padding: 0.8em;
+    border-radius: 1em;
+    background-color: rgb(183, 177, 177);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+article a{
+    margin: 0.7em;
+    padding: 0.8em;
+    border-radius: 1em;
+    font-size: 0.9em;
+    background-color: rgb(183, 177, 177);
+    text-decoration: none;
+}
+form{
+    margin: 1em;
+	padding:1.9em;
+	border-radius:0.8em;
+	background-color:#ccc;
+}
+form label{
+	width:2.2em;
+	font-weight:bold;
+}
+
+footer{
+    margin: 1.3em;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+
+
+  
