@@ -48,10 +48,7 @@ a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-a:hover{
-    background-color: #202121;
-    color: rgb(194, 102, 9);
-}
+
 article a{
     margin: 0.7em;
     padding: 0.8em;
