@@ -3,7 +3,7 @@
  Descripción de la hoja de estilo:
  ******************/
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
     color: black;
 }
@@ -33,6 +33,7 @@ header{
 p{
     margin-left: 2em;
     margin-right: 2em;
+    font-size: 1.1em;
 }
 nav{
     background-color: rgb(133, 128, 128);
