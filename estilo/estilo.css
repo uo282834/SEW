@@ -48,7 +48,10 @@ a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
+a:hover{
+    background-color: #202121;
+    color: rgb(255, 255, 255);
+}
 article a{
     margin: 0.7em;
     padding: 0.8em;
