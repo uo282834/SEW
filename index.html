@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!--Metadatos de los documentos HTML5-->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Alonso Antuña Gómez" />
+    <meta name ="description" content ="Ejercicio de la practica 3 javscript" />
+    <meta name="keywords" content="calculadora,calculator,web,javascript">
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
+    <title>Calculadora Cientifica</title>
+    <!--Link enlace a la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/CalculadoraCientífica.css" />
+    <script src = "CalculadoraCientífica.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Calculadora Científica</h1>
+    </header>
+    <label for="resultado">Calculadora </label>
+    <form>
+	<input type="text" id = "resultado" readonly/>
+    <input type="button" value="ON/C" onClick = "calc.delete()"/>
+    <input type="button" value="CE" onClick = "calc.ce()"/>
+    <input type="button" value="+/-" onClick = "calc.masmenos()"/>
+    <input type="button" value="√" onClick = "calc.sqrt()"/>
+    <input type="button" value="%" onClick = "calc.add('%')"/>
+    <input type="button" value="Shift" onClick = "calc.shift()"/>
+    <input type="button" value="sin" name = "sin" onClick = "calc.sin()"/>
+    <input type="button" value="cos" name = "cos" onClick = "calc.cos()"/>
+    <input type="button" value="tan" name = "tan" onClick = "calc.tan()"/>
+    <input type="button" value="*" onClick = "calc.add('*')"/>
+    <input type="button" value="log" onClick = "calc.log()"/>
+    <input type="button" value="7" onClick = "calc.add(7)"/>
+    <input type="button" value="8" onClick = "calc.add(8)"/>
+    <input type="button" value="9" onClick = "calc.add(9)"/>
+    <input type="button" value="π" onClick = "calc.pi()"/>
+    <input type="button" value="n!" onClick = "calc.fact()"/>
+    <input type="button" value="4" onClick = "calc.add(4)"/>
+    <input type="button" value="5" onClick = "calc.add(5)"/>
+    <input type="button" value="6" onClick = "calc.add(6)"/>
+    <input type="button" value="-" onClick = "calc.add('-')"/>
+    <input type="button" value="mrc" onClick = "calc.mrc()"/>
+    <input type="button" value="1" onClick = "calc.add(1)"/>
+    <input type="button" value="2" onClick = "calc.add(2)"/>
+    <input type="button" value="3" onClick = "calc.add(3)"/>
+    <input type="button" value="+" onClick = "calc.add('+')"/>
+    <input type="button" value="m-" onClick = "calc.mminus()"/>
+    <input type="button" value="." onClick = "calc.add('.')"/>
+    <input type="button" value="0" onClick = "calc.add(0)"/>
+    <input type="button" value="=" onClick = "calc.calc()"/>
+    <input type="button" value="m+" onClick = "calc.mplus()"/>
+    <input type="button" value="x^y" onClick = "calc.exp('**')"/>
+    <input type="button" value="(" onClick = "calc.add('(')"/>
+    <input type="button" value=")" onClick = "calc.add(')')"/>
+    <input type="button" value="|x|" onClick = "calc.abs()"/>
+    <input type="button" value="/" onClick = "calc.add('/')"/>
+    <input type="button" value="HYP" onClick = "calc.hyp('')"/>
+    <input type="button" value="10^x" onClick = "calc.expo('')"/>
+    <input type="button" value="x^2" onClick = "calc.square('')"/>
+    <input type="button" value="FE"  onClick = "calc.fe()"/>
+    </form>
+    <!--Icono de cumplimiento de los estándares-->
+    <footer>
+        <img src= "multimedia/imagenes/HTML5.png" alt= "HTML5 válido!" />
+        <img src= "multimedia/imagenes/CSS3.png" alt= "CSS3 válido!" />
+    </footer>
+</body>
+</html>
