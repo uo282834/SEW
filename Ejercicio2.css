@@ -1,0 +1,17 @@
+body{
+    background-color:white;
+    color:black;
+    font-family: sans-serif;
+}
+h1{
+    color:red;
+    background-color:white;
+}
+h2{
+    color: gray;
+     background-color:white;
+}
+p{
+    color:black;
+     background-color:white;
+}

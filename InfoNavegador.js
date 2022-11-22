@@ -1,0 +1,12 @@
+var info = new Object();
+info.nombre = navigator.appName;
+info.idioma = navigator.language;
+info.codigo = navigator.appCodeName;
+info.version = navigator.appVersion;
+info.java = navigator.javaEnabled();
+info.cookies = navigator.cookieEnabled;
+info.plataforma = navigator.platform;
+info.numPlugins = navigator.plugins.length;
+info.user = navigator.userAgent;
+info.online = navigator.onLine;
+info.product = navigator.product;
