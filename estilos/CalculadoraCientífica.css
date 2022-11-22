@@ -32,17 +32,6 @@ input{
     padding: 1.5em;
     border-radius: 1em;
 }
-input[value="ON/C"]{
-    background-color: antiquewhite;
-    color: black;
-    padding: 1.5;
-    border-radius: 1em;
-}
-input[value = "0"], input[value = "1"] ,input[value = "2"] ,input[value = "3"] ,input[value = "4"] ,input[value = "5"] ,input[value = "6"] ,input[value = "7"] ,input[value = "8"],
-input[value = "9"] ,input[value = "0"]{
-    background-color: gray;
-    color: white;
-}
 label{
     font-size: 1.3em;
     border-radius: 1em;
