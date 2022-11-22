@@ -12,7 +12,7 @@ header{
     border-radius: 1em;
     font-size: 1em;
     color: white;
-    background-color: red;
+    background-color: black;
 }
 form{
     display:grid;
@@ -45,6 +45,6 @@ label{
     font-size: 1.3em;
     border-radius: 1em;
     color: white;
-    background-color: red;
+    background-color: black;
     padding: 0.5em;
 }
