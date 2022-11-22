@@ -52,6 +52,6 @@ label{
 }
 
 input[value = "Metros"],input[value = "Kilómetros"],input[value = "Pulgadas"],input[value = "Pies"],input[value = "Yardas"]{
-    background-color: red;
+    background-color: #8A0000;
 }
 
