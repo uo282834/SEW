@@ -1,1 +1,0 @@
-document.write(info.nombre);
