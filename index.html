@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!--Metadatos de los documentos HTML5-->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Alonso Antuña Gómez" />
+    <meta name ="description" content ="Practicando con jquery" />
+    <meta name ="keywords" content ="jquery.javascript,sew,coding" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
+    <title>Aqui ira el título del sitio web</title>
+    <!--Link enlace a la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+<body>
+    <main>
+    <h1 id="titulo">Este es el título</h1> 
+    <input type="button" value="Ocultar h1" onclick="computacion.ocultar('#titulo')"/>
+    <input type="button" value="Mostrar h1" onclick="computacion.mostrar('#titulo')"/>
+    <input type="button" value="Cambiar color de fondo a azul h1" onclick="computacion.cambiarFondo('#titulo','blue')"/>
+    <input type="button" value="Cambiar color de letra a blanco h1" onclick="computacion.cambiarColorDeLetra('#titulo','white')"/>
+    <input type="button" value="Fondo de h1 original" onclick="computacion.cambiarFondo('#titulo','white')"/>
+    <input type="button" value="Color de h1 original" onclick="computacion.cambiarColorDeLetra('#titulo','black')"/>
+   
+    <h2>Este es un h2 que no se modificará</h2>
+   
+    <h3 id="añadir">Ahora veremos como añadir texto justo después de este, en la línea anterior y en la posterior</h3>
+    <input type="button" value="Añadir texto antes (linea encima) de h3" onclick="computacion.añadirAntesH3('#añadir')"/>
+    <input type="button" value="Añadir texto despues (linea debajo) de h3" onclick="computacion.añadirDespuesH3('#añadir')"/>
+    <input type="button" value="Añadir texto en la misma linea de h3 al final" onclick="computacion.añadirAcontinuacion('#añadir')"/>
+    <input type="button" value="Añadir texto en la misma linea de h3 antes" onclick="computacion.añadirLineaAntes('#añadir')"/>
+   
+    <h2 id="segundo">Este es el segundo encabezado</h2>
+    <input type="button" value="Ocultar h2" onclick="computacion.ocultar('#segundo')"/>
+    <input type="button" value="Mostrar h2" onclick="computacion.mostrar('#segundo')"/>
+    <input type="button" value="Cambiar color de fondo a rojo h1" onclick="computacion.cambiarFondo('#segundo','red')"/>
+    <input type="button" value="Cambiar color de letra a blanco h1" onclick="computacion.cambiarColorDeLetra('#segundo','white')"/>
+    <input type="button" value="Fondo de h2 original" onclick="computacion.cambiarFondo('#segundo','white')"/>
+    <input type="button" value="Color de h2 original" onclick="computacion.cambiarColorDeLetra('#segundo','black')"/>
+   
+    <h3>Y ahora pasaremos a los párrafos</h3>
+    <p>Este es el primer párrafo.</p>
+    <p>y este el segundo párrafo.</p>
+    <p>Y ahora vamos a cambiar los párrafos</p>
+    <input type="button" value="Ocultar párrafos" onclick="computacion.ocultar('p')"/>
+    <input type="button" value="Mostrar párrafos" onclick="computacion.mostrar('p')"/>
+    <input type="button" value="Cambiar color de fondo a negro de los párrafos" onclick="computacion.cambiarFondo('p','black')"/>
+    <input type="button" value="Cambiar color de letra a amarillo de los párrafos" onclick="computacion.cambiarColorDeLetra('p','yellow')"/>
+    <input type="button" value="Añadir elementos en la misma linea de los parrafos" onclick="computacion.añadirAcontinuacion('p')"/>
+    <p>Y aquí debajo tenemos una tabla con números</p>
+    <table>
+       <caption> Números </caption>
+       <tr>
+           <th>Primera columna</th>
+           <th>Segunda columna</th>
+           <th>Tercera columna</th>
+           <th>Cuarta columna</th>
+       </tr>
+       <tr>
+           <td>1</td>
+           <td>2</td>
+           <td>3</td>
+           <td>4</td>
+       </tr>
+       <tr>
+           <td>5</td>
+           <td>6</td>
+           <td>7</td>
+           <td>8</td>
+       </tr>
+       <tr id="terceraFila">
+           <td>9</td>
+           <td>10</td>
+           <td>11</td>
+           <td>12</td>
+       </tr>
+       <tr>
+           <td>13</td>
+           <td>14</td>
+           <td>15</td>
+           <td>16</td>
+       </tr>
+   </table>
+   
+   
+   <input type="button" value="Sumar filas y columnas" onclick="computacion.sumar('table')"/>
+   <p id="result">Resultado de la suma: </p>
+   <input type="button" value="Ocultar tabla" onclick="computacion.ocultar('table')"/>
+    <input type="button" value="Mostrar tabla" onclick="computacion.mostrar('table')"/>
+    <input type="button" value="Cambiar color de fondo a rojo tabla" onclick="computacion.cambiarFondo('table','red')"/>
+    <input type="button" value="Cambiar color de letra a gris tabla" onclick="computacion.cambiarColorDeLetra('table','grey')"/>
+    <input type="button" value="Fondo de tabla original" onclick="computacion.cambiarFondo('table','white')"/>
+    <input type="button" value="Color de tabla original" onclick="computacion.cambiarColorDeLetra('table','black')"/>
+    <input type="button" value="Cambiar color de fondo de la tercera fila a gris" onclick="computacion.cambiarFondo('#terceraFila','grey')"/>
+    <input type="button" value="Cambiar color de la tercera fila a amarillo" onclick="computacion.cambiarColorDeLetra('#terceraFila','yellow')"/>
+    <input type="button" value="Añadir una fila con append" onclick="computacion.añadirFila('table')"/>
+    <input type="button" value="Eliminar la tercera fila" onclick="computacion.eliminar('#terceraFila')"/>
+   
+   <p>Y ahora voy a incluir una lista de personajes de Breking Bad</p>
+   <ul>
+       <li>Walter White</li> 
+       <li>Jesse Pinkman</li>  
+       <li>Skyler White</li>
+       <li>Walter White, Jr.</li>
+       <li id="cuartu">Hank Schrader</li>
+       <li>Marie Schrader</li>
+       <li>Saul Goodman</li>
+   </ul>
+   
+    <input type="button" value="Ocultar lista" onclick="computacion.ocultar('ul')"/>
+    <input type="button" value="Mostrar lista" onclick="computacion.mostrar('ul')"/>
+    <input type="button" value="Cambiar color de fondo a rojo lista" onclick="computacion.cambiarFondo('ul','red')"/>
+    <input type="button" value="Cambiar color de letra a gris lista" onclick="computacion.cambiarColorDeLetra('ul','grey')"/>
+    <input type="button" value="Fondo de lista original" onclick="computacion.cambiarFondo('ul','white')"/>
+    <input type="button" value="Color de lista original" onclick="computacion.cambiarColorDeLetra('ul','black')"/>
+    <input type="button" value="Cambiar color de fondo del cuarto elemento a gris" onclick="computacion.cambiarFondo('#cuartu','grey')"/>
+    <input type="button" value="Cambiar color del cuarto elemento a amarillo" onclick="computacion.cambiarColorDeLetra('#cuartu','yellow')"/>
+    <input type="button" value="Añadir un elemento con after" onclick="computacion.añadirElemento('#cuartu')"/>
+    <input type="button" value="Añadir un elemento hijo al cuarto elemento" onclick="computacion.añadirElementoHijo('#cuartu')"/>
+    <input type="button" value="Eliminar el cuarto elemento" onclick="computacion.eliminar('#cuartu')"/>
+   
+    <p>Recorramos todos los elementos del DOM y mostremos quién es el padre y que tipo de elemento es</p>
+    <input type="button" value="Ver" onclick="computacion.ver()"/>
+   
+    <p>Por último, vamos a destruir casi todo lo que hay en la página</p>
+    <input type="button" value="Eliminar h1" onclick="computacion.eliminar('h1')"/>
+    <input type="button" value="Eliminar h2" onclick="computacion.eliminar('h2')"/>
+    <input type="button" value="Eliminar h3" onclick="computacion.eliminar('h3')"/>
+    <input type="button" value="Eliminar parrafos" onclick="computacion.eliminar('p')"/>
+    <input type="button" value="Eliminar tabla" onclick="computacion.eliminar('table')"/>
+    <input type="button" value="Eliminar lista" onclick="computacion.eliminar('ul')"/>
+    </main>
+    <footer>
+        <img src= "HTML5.png" alt= "HTML5 válido!" />
+        <img src= "CSS3.png" alt= "CSS3 válido!" />
+    </footer>
+</body>
+</html>
