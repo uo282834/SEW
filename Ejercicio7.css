@@ -16,7 +16,7 @@ h2{
     background-color:white;
 }
 h3{
-    color: violet;
+    color: black;
     background-color:white;
 }
 h4{
@@ -50,5 +50,8 @@ th{
     background-color:white;
     font-family: sans-serif;
     font-size: 1.1em;
+}
+input{
+    margin: 1em;
 }
   
