@@ -5,23 +5,21 @@
          <meta name ="author" content ="Alonso Antuña Gómez" />
          <meta name ="description" content ="Ejercicio 12" />
          <meta name ="keywords" content ="JAVASCRIPT,HTML,CSS" />
-          <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
-         <title>API FILE</title>
-         <link href="Ejercicio12.css" rel="stylesheet"/>
+         <title>Google Maps KML</title>
+         <link href="MapaKML.css" rel="stylesheet"/>
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-         <script src="Ejercicio12.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiG7c92q0y1WN8tpbB4Z0Y-7CkKtG2vTA&v=3.exp"></script>
+         <script src="MapaKML.js"></script>
      </head>
 <body>
-    <h1>API File</h1>
-	<label for="texto">Archivo a cargar: </label>
-    <input type="file" id="texto" onchange="cargar.leer(this.files)">
+    <h1>Google Maps KML</h1> 
+    <label for="texto">Archivo a cargar: </label>
+    <input type="file" id="texto" onchange="rutas.leer(this.files)"/>
     <p></p>
     <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <pre></pre>
-    <p></p>
+    <main>
+        <h1>Visualización del KML</h1>
+    </main>
     <!--Icono de cumplimiento de los estándares-->
     <footer>
         <img src= "HTML5.png" alt= "HTML5 válido!" />
