@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
+   <meta charset="UTF-8" />
     <meta name ="author" content ="Alonso Antuña Gómez" />
-    <meta name ="description" content ="Ejercicio 14" />
+    <meta name ="description" content ="Practica 8" />
     <meta name ="keywords" content ="JAVASCRIPT,HTML,CSS" />
-    <title>Ver un SVG</title>
-    <link rel="stylesheet" href="Ejercicio14.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Ejercicio14.js"></script>
-</head> 
+    <title>Clase Geolocalización</title>
+    <link href="Geolocalizacion.css" rel="stylesheet"/>
+    <script src="Geolocalizacion.js"></script>
+</head>
 <body>
-    <h1>SVG con API SVG, API File y API Clipboard</h1>
-    <form>
-		<label for="entrada">SVG a cargar: </label>
-        <input id="entrada" type="file" onchange="cargar.leer(this.files)"/>
-        <label for="boton">Ver SVG: </label>
-        <input id="boton" type="button" value="Ver SVG" onclick="cargar.ver()"/>
-    </form>
-    <p></p>  
-    <pre></pre>
-    <p></p>
-    <label for="copiar">Copiar: </label>
-	<input id="copiar" type='button' value='Copiar texto SVG' onclick="cargar.copiar()"/>
-    
+    <h1>Clase Geolocalización</h1>
+    <section>
+		<h2>Aquí obtendremos la ubicación</h2>
+        <input type="button" value="Obtener mis coordenadas, altitud, rumbo y velocidad" onClick = "miPosicion.verTodo('section');"/>
+    </section>
     <footer>
         <img src= "HTML5.png" alt= "HTML5 válido!" />
         <img src= "CSS3.png" alt= "CSS3 válido!" />
