@@ -10,3 +10,8 @@ footer{
 input{
     margin: 2em;
 }
+
+main{
+    height: 50em;
+    width: 100em;
+}
