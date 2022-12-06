@@ -1,5 +1,5 @@
 "use strict";
-class Geolocalización {
+class MapaEstaticoGoogle {
     constructor (){
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
     }
@@ -41,7 +41,6 @@ class Geolocalización {
     verTodo(dondeVerlo){
         var ubicacion=document.getElementsByTagName(dondeVerlo)[0];
         var datos='<p>'+ this.mensaje + '</p>'; 
-           datos+='<h2>Ubicación: </h2>'; 
         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
         datos+='<p>Precisión de la longitud y latitud: '+ this.precision +' metros</p>';
@@ -51,5 +50,34 @@ class Geolocalización {
         datos+='<p>Velocidad: '+ this.velocidad +' metros/segundo</p>';
         ubicacion.innerHTML = datos;
     }
+    getMapaEstaticoGoogle(dondeVerlo){
+        var ubicacion=document.getElementsByTagName(dondeVerlo)[0];
+        
+        var apiKey = "&key=AIzaSyDiG7c92q0y1WN8tpbB4Z0Y-7CkKtG2vTA";
+        //URL: obligatoriamente https
+        var url = "https://maps.googleapis.com/maps/api/staticmap?";
+        //Parámetros
+        // centro del mapa (obligatorio si no hay marcadores)
+        var centro = "center=" + this.latitud + "," + this.longitud;
+        //zoom (obligatorio si no hay marcadores)
+        //zoom: 1 (el mundo), 5 (continentes), 10 (ciudad), 15 (calles), 20 (edificios)
+        var zoom ="&zoom=15";
+        //Tamaño del mapa en pixeles (obligatorio)
+        var tamaño= "&size=800x600";
+        //Escala (opcional)
+        //Formato (opcional): PNG,JPEG,GIF
+        //Tipo de mapa (opcional)
+        //Idioma (opcional)
+        //region (opcional)
+        //marcadores (opcional)
+        var marcador = "&markers=color:red%7Clabel:S%7C" + this.latitud + "," + this.longitud;
+        //rutas. path (opcional)
+        //visible (optional)
+        //style (opcional)
+        var sensor = "&sensor=false"; 
+        
+        this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
+        ubicacion.innerHTML = "<h2>Mapa </h2><img alt ='mapa' src='"+this.imagenMapa+"'/>";
+    }
 }
-var miPosicion = new Geolocalización();
+var miMapa = new MapaEstaticoGoogle();
