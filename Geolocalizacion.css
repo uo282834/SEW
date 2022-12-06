@@ -13,5 +13,9 @@ input{
 
 main{
     height: 50em;
-    width: 100%;
+    width: 100em;
+}
+
+li{
+    margin: 1em;
 }
