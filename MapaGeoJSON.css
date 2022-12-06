@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+    color: black;
+    display: grid;
+    justify-content: center;
+}
+label{
+    margin: 1em;
+}
+input{
+    margin: 1em;
+}
+main{
+    height: 30em;
+    width: 100%;
+}
