@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+}
+
+input{
+    margin:1em;
+}
+footer{
+    margin: 1em;
+}
