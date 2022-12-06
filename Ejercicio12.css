@@ -1,0 +1,20 @@
+body{
+	background-color: skyblue;
+    color: black;
+	font-family: sans-serif;
+    display: grid;
+    justify-content: center;
+}
+h1{
+	color:red;	
+    background-color: skyblue;
+    margin: 1em;
+}
+label{
+    margin: 1em;
+}
+input{
+    margin: 1em;
+}
+
+
