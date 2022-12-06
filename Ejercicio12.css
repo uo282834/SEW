@@ -4,6 +4,7 @@ body{
 	font-family: sans-serif;
     display: grid;
     justify-content: center;
+    font-size: 2em;
 }
 h1{
 	color:red;	
