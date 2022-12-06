@@ -1,25 +1,29 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-         <meta name ="author" content ="Alonso Antuña Gómez" />
-         <meta name ="description" content ="Ejercicio 12" />
-         <meta name ="keywords" content ="JAVASCRIPT,HTML,CSS" />
-         <title>Google Maps GeoJSON</title>
-         <link href="MapaGeoJSON.css" rel="stylesheet"/>
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiG7c92q0y1WN8tpbB4Z0Y-7CkKtG2vTA&v=3.exp"></script>
-         <script src="MapaGeoJSON.js"></script>
-     </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Alonso Antuña Gómez" />
+    <meta name ="description" content ="Ejercicio 14" />
+    <meta name ="keywords" content ="JAVASCRIPT,HTML,CSS" />
+    <title>Ver un SVG</title>
+    <link rel="stylesheet" href="Ejercicio14.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+</head> 
 <body>
-    <h1>Google Maps GeoJSON</h1> 
-    <label for="texto">Archivo a cargar: </label>
-    <input type="file" id="texto" onchange="rutas.leer(this.files)"/>
+    <h1>SVG con API SVG, API File y API Clipboard</h1>
+    <form>
+		<label for="entrada">SVG a cargar: </label>
+        <input id="entrada" type="file" onchange="cargar.leer(this.files)"/>
+        <label for="boton">Ver SVG: </label>
+        <input id="boton" type="button" value="Ver SVG" onclick="cargar.ver()"/>
+    </form>
+    <p></p>  
+    <pre></pre>
     <p></p>
-    <p></p>
-    <main>
-        <h1>Visualización del GeoJSON</h1>
-    </main>
-    <!--Icono de cumplimiento de los estándares-->
+    <label for="copiar">Copiar: </label>
+	<input id="copiar" type='button' value='Copiar texto SVG' onclick="cargar.copiar()"/>
+    
     <footer>
         <img src= "HTML5.png" alt= "HTML5 válido!" />
         <img src= "CSS3.png" alt= "CSS3 válido!" />
