@@ -34,18 +34,23 @@
     <h2>Insertar datos en la tabla PruebasUsabilidad</h2>     
         
         <form action='#' method='post' name='Formulario'>
-        Edad: <input type='text' class='text' name='edad'/>
-        Nombre: <input type='text' class='text' name='nombre'/>
-        Apellidos: <input type='text' class='text' name='apellidos'/>
-        E-MAIL: <input type='text' class='text' name='email'/>
-        Telefono: <input type='text' class='text' name='telefono'/>
-        Sexo: 
-        <select name="sexo">
+        <label for="edad">Edad</label>
+        <input type='text' class='text' name='edad' id = "edad"/>
+        <label for="nombre">Nombre</label>
+        <input type='text' class='text' name='nombre' id = "nombre"/>
+        <label for="apellidos">Apellidos</label> 
+        <input type='text' class='text' name='apellidos' id = "apellidos"/>
+        <label for="email">E-Mail</label>
+        <input type='text' class='text' name='email' id = "email"/>
+        <label for="telefono">Telefono</label>
+        <input type='text' class='text' name='telefono' id = "telefono"/>
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id = "sexo">
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
         </select>
-        Pericia mostrada: 
-        <select name="pericia">
+        <label for="pericia">Pericia</label>
+        <select name="pericia" id = "pericia" >
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -58,16 +63,19 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        Tiempo empleado: <input type='text' class='text' name='tiempo'/>
-        La tarea fue realizada correctamente: 
-        <select name="correcta">
+        <label for="tiempo">Tiempo empleado</label>
+        <input type='text' class='text' name='tiempo' id = "tiempo"/>
+        <label for="correcta">Tarea realizada correctamente</label>
+        <select name="correcta" id = "correcta">
             <option value="si">Sí</option>
             <option value="no">No</option>
         </select>
-        Comentarios: <input type='text' class='text' name='comentarios'/>
-        Propuestas de mejora: <input type='text' class='text' name='propuestas'/>
-        Valoración de la aplicación: 
-        <select name="valoracion">
+        <label for="comentarios">Comentarios</label>
+        <input type='text' class='text' name='comentarios' id = "comentarios"/>
+        <label for="prop">Propuestas de mejora</label>
+        <input type='text' class='text' name='propuestas' id = "prop"/>
+        <label for="valoracion">Valoracion</label>
+        <select name="valoracion" id = "valoracion">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
