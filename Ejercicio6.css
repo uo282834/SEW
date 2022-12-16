@@ -20,5 +20,18 @@ nav ul li{
 footer{
     margin: 2em;
 }
+li{
+    margin: 1em;
+}
+p{
+    margin: 1em;
+}
+form{
+    display: grid;
+    justify-content: center;
+}
+input,select{
+    margin: 0.5em;
+}
 
 
