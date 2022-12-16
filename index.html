@@ -1,46 +1,59 @@
-
-<!DOCTYPE html>
-<html lang="es"><head>
-    <title>Crear una tabla de la base de datos</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Alonso Antuña Gómez">
-    <meta name="description" content="Practica PHP">
-    <meta name="keywords" content="PHP,SEW,WEB">
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!--Metadatos de los documentos HTML5-->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Alonso Antuña Gómez" />
+    <meta name ="description" content ="Ejercicio de la practica 3 javscript" />
+    <meta name="keywords" content="calculadora,calculator,web,javascript">
     <!--Definición de la ventana gráfica-->
-    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
-    
-    <!-- enlace a la hoja de estilos -->
-    <link href="Ejercicio6.css" rel="stylesheet">
-    
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
+    <title>CalculadorRPN</title>
+    <!--Link enlace a la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <script src = "CalculadoraRPN.js"></script>
 </head>
-    
 <body>
-    <h1>Menú base de datos MySQL</h1> 
-    <nav>  
-        <ul>
-            <li><a href="Ejercicio6.html" title="Principal">Menú principal</a></li>
-            <li><a href="CrearBaseDeDatos.php" title="CrearBaseDatos">Crear Base de Datos</a></li>
-            <li><a href="CrearTabla.php" title="CrearTabla">Crear una tabla</a></li>
-            <li><a href="InsertarDatos.php" title="InsertarDatosTabla">Insertar datos en una tabla</a></li>
-            <li><a href="BuscarDatos.php" title="BuscarDatosTabla">Buscar datos en una tabla</a></li>
-            <li><a href="ModificarDatos.php" title="modificarDatosTabla">Modificar datos en una tabla</a></li>
-            <li><a href="EliminarDatos.php" title="EliminarDatosTabla">Eliminar datos de una tabla</a></li>
-            <li><a href="GenerarInforme.php" title="GenerarInforme">Generar informe</a></li>
-            <li><a href="CargarDatos.php" title="CargarDatos">Cargar datos desde un archivo en una tabla de la Base de Datos</a></li>
-            <li><a href="ExportarDatos.php" title="ExportarDatos">Exportar datos a un archivo desde una tabla de la Base de Datos</a></li>
-        </ul>
-    </nav> 
-    <h2>Crear una base de datos: Pruebas</h2>     
-    <p>Base de datos PRUEBAS creada con éxito</p>        
-    <form id="crearBase" action="#" method="post" name="Formulario">
-        <input type="submit" class="button" name="creacion" value="Crear">
+    <header>
+    <h1>Calculadora RPN</h1>
+    </header>
+    <main>
+        <label for="pila">Calculadora RPN</label>
+        <label for="resultado">Valores introducidos:</label>
+    <form>
+        <textarea id = "pila" name = "pila" rows = 17 cols = 5 readonly disabled></textarea>
+        <input type="text" name = "resultado" id = "resultado" readonly disabled/>
+        <input type="button" value="ON/C" onClick = "calc.deleteAll()"/>
+        <input type="button" value="CE" onClick = "calc.delete()"/>
+        <input type="button" value="." onClick = "calc.add('.')"/>
+        <input type="button" value="*" onClick = "calc.calc('*')"/>
+        <input type="button" value="/" onClick = "calc.calc('/')"/>
+        <input type="button" value="SHIFT" onClick = "calc.shift()"/>
+        <input type="button" value="7" onClick = "calc.add(7)"/>
+        <input type="button" value="8" onClick = "calc.add(8)"/>
+        <input type="button" value="9" onClick = "calc.add(9)"/>
+        <input type="button" value="ENTER" onClick = "calc.push()"/>
+        <input type="button" value="sin" name = "sin" onClick = "calc.sin()"/>
+        <input type="button" value="4" onClick = "calc.add(4)"/>
+        <input type="button" value="5" onClick = "calc.add(5)"/>
+        <input type="button" value="6" onClick = "calc.add(6)"/>
+        <input type="button" value="-" onClick = "calc.calc('-')"/>
+        <input type="button" value="tan" name = "tan" onClick = "calc.tan()"/>
+        <input type="button" value="1" onClick = "calc.add(1)"/>
+        <input type="button" value="2" onClick = "calc.add(2)"/>
+        <input type="button" value="3" onClick = "calc.add(3)"/>
+        <input type="button" value="+" onClick = "calc.calc('+')"/>
+        <input type="button" value="cos" name = "cos" onClick = "calc.cos()"/>
+        <input type="button" value=" ">
+        <input type="button" value="0" onClick = "calc.add(0)"/>
+        <input type="button" value="  ">
+        <input type="button" value="  ">
     </form>
-    
+    </main>
+    <!--Icono de cumplimiento de los estándares-->
     <footer>
-       <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido">
-    
-            <img src=" http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        <img src= "HTML5.png" alt= "HTML5 válido!" />
+        <img src= "CSS3.png" alt= "CSS3 válido!" />
     </footer>
-    
-
-</body></html>
+</body>
+</html>
