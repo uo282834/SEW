@@ -29,94 +29,31 @@
             <a tabindex="11" href="VerNotaMediaAsignatura.php" title="NotaMedia" accesskey="K">Ver la nota media de una asignatura</a>
             <a tabindex="12" href="Exportar.php" title="Exportar" accesskey="J">Exportar datos a ficheros CSV</a>
     </nav> 
-    <h1>Ver alumnos</h1>      
+    <h1>Ver calificaciones de un alumno</h1>      
     <table>
-                            <tbody><tr>
-                                <th>Id</th>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Edad</th>
-                                <th>Dirección</th>
+                        <tbody><tr>
+                            <th>Nombre de la asignatura</th>
+                            <th>Calificación</th>
+                        </tr><tr>
+                                <td>Diseno del Software</td>
+                                <td>6</td>
                             </tr><tr>
-                                    <td>1</td>
-                                    <td>Mario</td>
-                                    <td>Diaz Ceñera</td>
-                                    <td>20</td>
-                                    <td>El Entrego</td>
-                                </tr><tr>
-                                    <td>2</td>
-                                    <td>Pepe</td>
-                                    <td>Fernandez Domingo</td>
-                                    <td>55</td>
-                                    <td>Gijon</td>
-                                </tr><tr>
-                                    <td>3</td>
-                                    <td>Luisa</td>
-                                    <td>Alvarez Santillan</td>
-                                    <td>43</td>
-                                    <td>Oviedo</td>
-                                </tr><tr>
-                                    <td>4</td>
-                                    <td>Lucia</td>
-                                    <td>Sanchez Alvarez</td>
-                                    <td>18</td>
-                                    <td>Avilés</td>
-                                </tr><tr>
-                                    <td>5</td>
-                                    <td>Isabel</td>
-                                    <td>Diaz Santos</td>
-                                    <td>35</td>
-                                    <td>Sotrondio</td>
-                                </tr><tr>
-                                    <td>6</td>
-                                    <td>Alba</td>
-                                    <td>Garcia Antuña</td>
-                                    <td>86</td>
-                                    <td>Siero</td>
-                                </tr><tr>
-                                    <td>7</td>
-                                    <td>Maria</td>
-                                    <td>Suarez Fernandez</td>
-                                    <td>10</td>
-                                    <td>Laviana</td>
-                                </tr><tr>
-                                    <td>8</td>
-                                    <td>Alejandro</td>
-                                    <td>Conde Concheso</td>
-                                    <td>49</td>
-                                    <td>Langreo</td>
-                                </tr><tr>
-                                    <td>9</td>
-                                    <td>Raul</td>
-                                    <td>Claus Ardura</td>
-                                    <td>25</td>
-                                    <td>Llanes</td>
-                                </tr><tr>
-                                    <td>10</td>
-                                    <td>Javier</td>
-                                    <td>Infante Estrada</td>
-                                    <td>40</td>
-                                    <td>Grado</td>
-                                </tr><tr>
-                                    <td>11</td>
-                                    <td>alonso</td>
-                                    <td>ag</td>
-                                    <td>10</td>
-                                    <td>sotro</td>
-                                </tr><tr>
-                                    <td>12</td>
-                                    <td>Alonso</td>
-                                    <td>a</td>
-                                    <td>20</td>
-                                    <td>Cascaya Nº1</td>
-                                </tr><tr>
-                                    <td>13</td>
-                                    <td>Oscar</td>
-                                    <td>Lobo</td>
-                                    <td>20</td>
-                                    <td>El Entrego</td>
-                                </tr></tbody></table>        
-  <footer>
+                                <td>Software para Robots</td>
+                                <td>10</td>
+                            </tr><tr>
+                                <td>Arquitectura del Software</td>
+                                <td>6.25</td>
+                            </tr><tr>
+                                <td>Diseno de Lenguajes de Program</td>
+                                <td>3.75</td>
+                            </tr></tbody></table>    
+        
+        <form action="#" method="post" name="Formulario">
+        <label for="ida">Id del alumno:</label>
+         <input type="text" class="text" name="id" id="ida">
+        <input type="submit" class="button" name="ver" value="Ver">
+        </form>       
+        <footer>
        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido">
     
             <img src=" http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
