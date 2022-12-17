@@ -1,59 +1,116 @@
-<!DOCTYPE HTML>
-<html lang="es">
-<head>
-    <!--Metadatos de los documentos HTML5-->
-    <meta charset="UTF-8" />
-    <meta name ="author" content ="Alonso Antuña Gómez" />
-    <meta name ="description" content ="Ejercicio de la practica 3 javscript" />
-    <meta name="keywords" content="calculadora,calculator,web,javascript">
+<!DOCTYPE html>
+<html lang="es"><head>
+    <title>Ejercicio 7</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alonso Antuña Gómez">
+    <meta name="description" content="Practica PHP">
+    <meta name="keywords" content="PHP,SEW,WEB">
     <!--Definición de la ventana gráfica-->
-    <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
-    <title>CalculadorRPN</title>
-    <!--Link enlace a la hoja de estilo-->
-    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
-    <script src = "CalculadoraRPN.js"></script>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+    
+    <!-- enlace a la hoja de estilos -->
+    <link href="Ejercicio7.css" rel="stylesheet">
+    
 </head>
+    
 <body>
-    <header>
-    <h1>Calculadora RPN</h1>
-    </header>
-    <main>
-        <label for="pila">Calculadora RPN</label>
-        <label for="resultado">Valores introducidos:</label>
-    <form>
-        <textarea id = "pila" name = "pila" rows = 17 cols = 5 readonly disabled></textarea>
-        <input type="text" name = "resultado" id = "resultado" readonly disabled/>
-        <input type="button" value="ON/C" onClick = "calc.deleteAll()"/>
-        <input type="button" value="CE" onClick = "calc.delete()"/>
-        <input type="button" value="." onClick = "calc.add('.')"/>
-        <input type="button" value="*" onClick = "calc.calc('*')"/>
-        <input type="button" value="/" onClick = "calc.calc('/')"/>
-        <input type="button" value="SHIFT" onClick = "calc.shift()"/>
-        <input type="button" value="7" onClick = "calc.add(7)"/>
-        <input type="button" value="8" onClick = "calc.add(8)"/>
-        <input type="button" value="9" onClick = "calc.add(9)"/>
-        <input type="button" value="ENTER" onClick = "calc.push()"/>
-        <input type="button" value="sin" name = "sin" onClick = "calc.sin()"/>
-        <input type="button" value="4" onClick = "calc.add(4)"/>
-        <input type="button" value="5" onClick = "calc.add(5)"/>
-        <input type="button" value="6" onClick = "calc.add(6)"/>
-        <input type="button" value="-" onClick = "calc.calc('-')"/>
-        <input type="button" value="tan" name = "tan" onClick = "calc.tan()"/>
-        <input type="button" value="1" onClick = "calc.add(1)"/>
-        <input type="button" value="2" onClick = "calc.add(2)"/>
-        <input type="button" value="3" onClick = "calc.add(3)"/>
-        <input type="button" value="+" onClick = "calc.calc('+')"/>
-        <input type="button" value="cos" name = "cos" onClick = "calc.cos()"/>
-        <input type="button" value=" ">
-        <input type="button" value="0" onClick = "calc.add(0)"/>
-        <input type="button" value="  ">
-        <input type="button" value="  ">
-    </form>
-    </main>
-    <!--Icono de cumplimiento de los estándares-->
-    <footer>
-        <img src= "HTML5.png" alt= "HTML5 válido!" />
-        <img src= "CSS3.png" alt= "CSS3 válido!" />
+<h1>Sistema de Gestión de Calificaciones de la EII</h1>  
+    <nav>  
+        <ul>
+            <li><a href="Ejercicio7.php" title="Inicio">Inicializar sistema (crear BD y cargar datos)</a></li>
+            <li><a href="Añadir.php" title="Añadir">Añadir a un nuevo alumno</a></li>
+            <li><a href="AñadirAula.php" title="AñadirAula">Añadir Aula</a></li>
+            <li><a href="AñadirProfesores.php" title="AñadirProfesor">Añadir Profesor</a></li>
+            <li><a href="Eliminar.php" title="Eliminar">Eliminar a un alumno</a></li>
+            <li><a href="VerInfoAlumnos.php" title="VerInfoAlumno">Ver los alumnos</a></li>
+            <li><a href="AñadirMateria.php" title="Añadir">Añadir una nueva asignatura</a></li>
+            <li><a href="EliminarMateria.php" title="Añadir">Eliminar una asignatura</a></li>
+            <li><a href="Calificar.php" title="Calificar">Calificar a alumno y materia</a></li>
+            <li><a href="VerCalificacionesAlumno.php" title="Calificaciones">Ver calificaciones de un alumno</a></li>
+            <li><a href="VerNotaMediaAsignatura.php" title="NotaMedia">Ver la nota media de una asignatura</a></li>
+            <li><a href="Exportar.php" title="Exportar">Exportar datos a ficheros CSV</a></li>
+        </ul>
+    </nav> 
+    <h1>Ver alumnos</h1>      
+    <table>
+                            <tbody><tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Edad</th>
+                                <th>Dirección</th>
+                            </tr><tr>
+                                    <td>1</td>
+                                    <td>Mario</td>
+                                    <td>Diaz Ceñera</td>
+                                    <td>20</td>
+                                    <td>El Entrego</td>
+                                </tr><tr>
+                                    <td>2</td>
+                                    <td>Pepe</td>
+                                    <td>Fernandez Domingo</td>
+                                    <td>55</td>
+                                    <td>Gijon</td>
+                                </tr><tr>
+                                    <td>3</td>
+                                    <td>Luisa</td>
+                                    <td>Alvarez Santillan</td>
+                                    <td>43</td>
+                                    <td>Oviedo</td>
+                                </tr><tr>
+                                    <td>4</td>
+                                    <td>Lucia</td>
+                                    <td>Sanchez Alvarez</td>
+                                    <td>18</td>
+                                    <td>Avilés</td>
+                                </tr><tr>
+                                    <td>5</td>
+                                    <td>Isabel</td>
+                                    <td>Diaz Santos</td>
+                                    <td>35</td>
+                                    <td>Sotrondio</td>
+                                </tr><tr>
+                                    <td>6</td>
+                                    <td>Alba</td>
+                                    <td>Garcia Antuña</td>
+                                    <td>86</td>
+                                    <td>Siero</td>
+                                </tr><tr>
+                                    <td>7</td>
+                                    <td>Maria</td>
+                                    <td>Suarez Fernandez</td>
+                                    <td>10</td>
+                                    <td>Laviana</td>
+                                </tr><tr>
+                                    <td>8</td>
+                                    <td>Alejandro</td>
+                                    <td>Conde Concheso</td>
+                                    <td>49</td>
+                                    <td>Langreo</td>
+                                </tr><tr>
+                                    <td>9</td>
+                                    <td>Raul</td>
+                                    <td>Claus Ardura</td>
+                                    <td>25</td>
+                                    <td>Llanes</td>
+                                </tr><tr>
+                                    <td>10</td>
+                                    <td>Javier</td>
+                                    <td>Infante Estrada</td>
+                                    <td>40</td>
+                                    <td>Grado</td>
+                                </tr><tr>
+                                    <td>11</td>
+                                    <td>alonso</td>
+                                    <td>ag</td>
+                                    <td>10</td>
+                                    <td>sotro</td>
+                                </tr></tbody></table>        
+  <footer>
+       <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido">
+    
+            <img src=" http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
     </footer>
-</body>
-</html>
+    
+
+</body></html>
