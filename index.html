@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="es"><head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Alonso Antuña Gómez">
-    <meta name="description" content="Ejercicio de la practica 3 javscript">
-    <meta name="keywords" content="calculadora,calculator,web,php">
-    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
-    <title>Calculadora Cientifica</title>
-    <link rel="stylesheet" type="text/css" href="CalculadoraCientífica.css">
-</head>
+<meta charset="UTF-8">
+<meta name="author" content="Alonso Antuña Gómez">
+<meta name="description" content="Calculadora RPN">
+<meta name="keywords" content="calculadora,calculator,web,php">
+<meta name="viewport" content="width=device-width, initial scale=1.0"> 
+<title>Calculadora RPN</title>
+<link rel="stylesheet" href="CalculadoraRPN.css">
+</head>    
 <body>
-  <label for="resultado">Calculadora</label>  <form target="#" method="post" name="Calculadora">
-    <input type="text" id="resultado" name="expresion" value="8" readonly="" disabled="">
-    <input type="submit" class="button" value="DEG" name="DEG">
-    <input type="submit" class="button" value="HYP" name="HYP">
-    <input type="submit" class="button" value="FE" name="FE">
-    <input type="submit" class="button" value=" " name="ac1">
-    <input type="submit" class="button" name="m+" value="m+">
-    <input type="submit" class="button" name="mrc" value="mrc">
-    <input type="submit" class="button" name="m-" value="m-">
-    <input type="submit" class="button" value=" " name="ac2"> 
-    <input type="submit" class="button" name="square" value="x^2">  
-    <input type="submit" class="button" name="x^y" value="x^y"> 
-    <input type="submit" class="button" value="sin" name="sin">
-    <input type="submit" class="button" value="cos" name="cos">
-    <input type="submit" class="button" value="tan" name="tan">
-    <input type="submit" class="button" value="√" name="raiz">
-    <input type="submit" class="button" value="10^x" name="exp">
-    <input type="submit" class="button" value="asin" name="asin">
-    <input type="submit" class="button" value="acos" name="acos">
-    <input type="submit" class="button" value="atan" name="atan">
-    <input type="submit" class="button" value="log" name="log">
-    <input type="submit" class="button" value="EXP" name="exp2">
-    <input type="submit" class="button" value="asinh" name="asinh">
-    <input type="submit" class="button" value="asinh" name="acosh">
-    <input type="submit" class="button" value="asinh" name="atanh">
-    <input type="submit" class="button" value="%" name="%">
-    <input type="submit" class="button" value="shift" name="shift">
-    <input type="submit" class="button" value="CE" name="CE">
-    <input type="submit" class="button" name="C" value="C">
-    <input type="submit" class="button" name="CE2" value="←">
-    <input type="submit" class="button" name="/" value="/">
-    <input type="submit" class="button" name="PI" value="π">
-    <input type="submit" class="button" name="7" value="7">
-    <input type="submit" class="button" name="8" value="8">
-    <input type="submit" class="button" name="9" value="9">
-    <input type="submit" class="button" name="*" value="*">
-    <input type="submit" class="button" value="n!" name="fact">
-    <input type="submit" class="button" name="4" value="4">
-    <input type="submit" class="button" name="5" value="5">
-    <input type="submit" class="button" name="6" value="6">
-    <input type="submit" class="button" name="-" value="-">
-    <input type="submit" class="button" value="+/-" name="+/-">
-    <input type="submit" class="button" name="1" value="1">
-    <input type="submit" class="button" name="2" value="2">
-    <input type="submit" class="button" name="3" value="3">
-    <input type="submit" class="button" name="+" value="+">
-    <input type="submit" class="button" name="(" value="(">
-    <input type="submit" class="button" name=")" value=")">
-    <input type="submit" class="button" name="0" value="0">
-    <input type="submit" class="button" name="punt" value=".">
-    <input type="submit" class="button" name="=" value="=">
-    <input type="submit" class="button" name="abs" value="|x|">
-   
-</form><footer>
-        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido">
+<main>
+        <label for="pila">Calculadora RPN</label>
+        <label for="resultado">Valores introducidos</label>
+        <form action="#" method="post" name="Calculadora">
+        <textarea rows="17" cols="5" id="pila" name="pila" readonly="" disabled=""></textarea>
+        <input type="text" id="resultado" name="expresion" value="" readonly="">
+        <input type="submit" class="button" name="log" value="log">
+        <input type="submit" class="button" name="sin" value="sin">
+        <input type="submit" class="button" name="cos" value="cos">
+        <input type="submit" class="button" name="tan" value="tan">
+        <input type="submit" class="button" name="/" value="/">
+        <input type="submit" class="button" name="raiz" value="√">   
+        <input type="submit" class="button" name="7" value="7">
+        <input type="submit" class="button" name="8" value="8">
+        <input type="submit" class="button" name="9" value="9">
+        <input type="submit" class="button" name="*" value="*">
+        <input type="submit" class="button" name="shift" value="shift">
+        <input type="submit" class="button" name="4" value="4">
+        <input type="submit" class="button" name="5" value="5">
+        <input type="submit" class="button" name="6" value="6">
+        <input type="submit" class="button" name="-" value="-">
+        <input type="submit" class="button" name="elevado" value="x^n">
+        <input type="submit" class="button" name="1" value="1">
+        <input type="submit" class="button" name="2" value="2">
+        <input type="submit" class="button" name="3" value="3">
+        <input type="submit" class="button" name="+" value="+">
+        <input type="submit" class="button" name="C" value="C">
+        <input type="submit" class="button" name="CE" value="CE">
+        <input type="submit" class="button" name="0" value="0">
+        <input type="submit" class="button" name="," value=".">
+        <input type="submit" class="button" name="OK" value="OK">
+    </form></main><footer>
+        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido" title="HTML5 Válido">
     
             <img src=" http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    </footer>
+</footer>   
 
 </body></html>
