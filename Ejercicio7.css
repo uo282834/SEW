@@ -7,22 +7,19 @@ body{
 nav{
     display: grid;
     justify-content: center;
+    margin:1em;
+}
+
+a{
+    margin: 0.5em;
 }
 
 
 
-nav ul li{
-    list-style-type: none;
-    margin: 1em;
-    border-radius: 1em;
-    font-size: 1em;
-}
 footer{
     margin: 2em;
 }
-li{
-    margin: 1em;
-}
+
 p{
     margin: 1em;
 }
@@ -32,6 +29,9 @@ form{
 }
 input,select{
     margin: 0.5em;
+}
+label{
+    margin: 1em;
 }
 
 
