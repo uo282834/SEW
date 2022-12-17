@@ -29,21 +29,30 @@
             <a tabindex="11" href="VerNotaMediaAsignatura.php" title="NotaMedia" accesskey="K">Ver la nota media de una asignatura</a>
             <a tabindex="12" href="Exportar.php" title="Exportar" accesskey="J">Exportar datos a ficheros CSV</a>
     </nav> 
-    <h1>Insertar un nuevo alumno</h1>      
-    <p>Alumno añadido correctamente</p>    
+    <h1>Ver calificaciones de un alumno</h1>      
+    <table>
+                        <tbody><tr>
+                            <th>Nombre de la asignatura</th>
+                            <th>Calificación</th>
+                        </tr><tr>
+                                <td>Diseno del Software</td>
+                                <td>6</td>
+                            </tr><tr>
+                                <td>Software para Robots</td>
+                                <td>10</td>
+                            </tr><tr>
+                                <td>Arquitectura del Software</td>
+                                <td>6.25</td>
+                            </tr><tr>
+                                <td>Diseno de Lenguajes de Program</td>
+                                <td>3.75</td>
+                            </tr></tbody></table>    
         
         <form action="#" method="post" name="Formulario">
-        <label for="nombre">Nombre</label>
-        <input type="text" class="text" name="name" id="nombre">
-        <label for="apellido">Apellidos</label>
-        <input type="text" class="text" name="surname" id="apellido">
-        <label for="edad">Edad</label>
-        <input type="text" class="text" name="edad" id="edad">
-        <label for="dire">Dirección</label> 
-        <input type="text" class="text" name="dir" id="dire">
-        <input type="submit" class="button" name="insertar" value="Insertar">
-        </form>
-    
+        <label for="ida">Id del alumno:</label>
+         <input type="text" class="text" name="id" id="ida">
+        <input type="submit" class="button" name="ver" value="Ver">
+        </form>       
         <footer>
        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Válido">
     
