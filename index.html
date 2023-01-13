@@ -1,113 +1,112 @@
-<!DOCTYPE HTML>
-<html lang="es">
-<head>
+<!DOCTYPE html>
+<html lang="es"><head>
     <!--Metadatos de los documentos HTML5-->
-    <meta charset="UTF-8" />
-    <meta name ="author" content ="Alonso Antuña Gómez" />
-    <meta name ="description" content ="Practicando con jquery" />
-    <meta name ="keywords" content ="jquery.javascript,sew,coding" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Alonso Antuña Gómez">
+    <meta name="description" content="Practicando con jquery">
+    <meta name="keywords" content="jquery.javascript,sew,coding">
     <!--Definición de la ventana gráfica-->
-    <meta name ="viewport" content ="width=device-width, initial scale=1.0" /> 
+    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
     <title>Ejercicio 7</title>
     <!--Link enlace a la hoja de estilo-->
-    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><style type="text/css" id="operaUserStyle"></style>
     <script src="Ejercicio7.js"></script>
 </head>
 <body>
-    <main>
-    <h1>Este es el título, un h1</h1> 
-    <input type="button" value="Ocultar h1" onclick="computacion.ocultar('h1')"/>
-    <input type="button" value="Mostrar h1" onclick="computacion.mostrar('h1')"/>
-    <input type="button" value="Cambiar color de fondo  h1" onclick="computacion.cambiarFondo('h1','yellow')"/>
-    <input type="button" value="Cambiar color de letra  h1" onclick="computacion.cambiarColorDeLetra('h1','red')"/>
-    <input type="button" value="Fondo de h1 original" onclick="computacion.cambiarFondo('h1','white')"/>
-    <input type="button" value="Color de h1 original" onclick="computacion.cambiarColorDeLetra('h1','black')"/>
+    <main>Etiqueta padre : &lt;BODY&gt; elemento : &lt;MAIN&gt; valor: 
+    <h1>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;H1&gt; valor: Este es el título, un h1</h1> 
+    <input type="button" value="Ocultar h1" onclick="computacion.ocultar('h1')">
+    <input type="button" value="Mostrar h1" onclick="computacion.mostrar('h1')">
+    <input type="button" value="Cambiar color de fondo  h1" onclick="computacion.cambiarFondo('h1','yellow')">
+    <input type="button" value="Cambiar color de letra  h1" onclick="computacion.cambiarColorDeLetra('h1','red')">
+    <input type="button" value="Fondo de h1 original" onclick="computacion.cambiarFondo('h1','white')">
+    <input type="button" value="Color de h1 original" onclick="computacion.cambiarColorDeLetra('h1','black')">
    
    
-    <h2>Ahora veremos como añadir texto justo después de este, en la línea anterior y en la posterior, esto es un h2</h2>
-    <input type="button" value="Añadir texto antes (linea encima) de h2" onclick="computacion.añadirAntesH3('h2')"/>
-    <input type="button" value="Añadir texto despues (linea debajo) de h2" onclick="computacion.añadirDespuesH3('h2')"/>
-    <input type="button" value="Añadir texto en la misma linea de h2 al final" onclick="computacion.añadirAcontinuacion('h2')"/>
-    <input type="button" value="Añadir texto en la misma linea de h2 antes" onclick="computacion.añadirLineaAntes('h2')"/>
+    <h2>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;H2&gt; valor: Ahora veremos como añadir texto justo después de este, en la línea anterior y en la posterior, esto es un h2</h2>
+    <input type="button" value="Añadir texto antes (linea encima) de h2" onclick="computacion.añadirAntesH3('h2')">
+    <input type="button" value="Añadir texto despues (linea debajo) de h2" onclick="computacion.añadirDespuesH3('h2')">
+    <input type="button" value="Añadir texto en la misma linea de h2 al final" onclick="computacion.añadirAcontinuacion('h2')">
+    <input type="button" value="Añadir texto en la misma linea de h2 antes" onclick="computacion.añadirLineaAntes('h2')">
    
-    <h3>Y ahora pasaremos a los párrafos</h3>
-    <p>Este es el primer párrafo.</p>
-    <p>y este el segundo párrafo.</p>
-    <p>Y ahora vamos a cambiar los párrafos</p>
-    <input type="button" value="Ocultar párrafos" onclick="computacion.ocultar('p')"/>
-    <input type="button" value="Mostrar párrafos" onclick="computacion.mostrar('p')"/>
-    <input type="button" value="Cambiar color de fondo de los párrafos" onclick="computacion.cambiarFondo('p','yellow')"/>
-    <input type="button" value="Cambiar color de letra  de los párrafos" onclick="computacion.cambiarColorDeLetra('p','red')"/>
-    <input type="button" value="Añadir elementos en la misma linea de los parrafos" onclick="computacion.añadirAcontinuacion('p')"/>
-    <p>Y aquí debajo tenemos una tabla con números</p>
+    <h3>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;H3&gt; valor: Y ahora pasaremos a los párrafos</h3>
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Este es el primer párrafo.</p>
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: y este el segundo párrafo.</p>
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Y ahora vamos a cambiar los párrafos</p>
+    <input type="button" value="Ocultar párrafos" onclick="computacion.ocultar('p')">
+    <input type="button" value="Mostrar párrafos" onclick="computacion.mostrar('p')">
+    <input type="button" value="Cambiar color de fondo de los párrafos" onclick="computacion.cambiarFondo('p','yellow')">
+    <input type="button" value="Cambiar color de letra  de los párrafos" onclick="computacion.cambiarColorDeLetra('p','red')">
+    <input type="button" value="Añadir elementos en la misma linea de los parrafos" onclick="computacion.añadirAcontinuacion('p')">
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Y aquí debajo tenemos una tabla con números</p>
     <table>
-       <tr>
-           <th>Primera columna</th>
-           <th>Segunda columna</th>
-           <th>Tercera columna</th>
-           <th>Cuarta columna</th>
+       <tbody><tr>
+           <th>Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Primera columna</th>
+           <th>Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Segunda columna</th>
+           <th>Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Tercera columna</th>
+           <th>Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Cuarta columna</th>
        </tr>
        <tr>
-           <td>1</td>
-           <td>2</td>
-           <td>3</td>
-           <td>4</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 1</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 2</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 3</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 4</td>
        </tr>
        <tr>
-           <td>5</td>
-           <td>6</td>
-           <td>7</td>
-           <td>8</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 5</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 6</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 7</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 8</td>
        </tr>
        <tr>
-           <td>9</td>
-           <td>10</td>
-           <td>11</td>
-           <td>12</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 9</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 10</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 11</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 12</td>
        </tr>
        <tr>
-           <td>13</td>
-           <td>14</td>
-           <td>15</td>
-           <td>16</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 13</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 14</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 15</td>
+           <td>Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: 16</td>
        </tr>
-   </table>
+   </tbody></table>
    
    
-   <input type="button" value="Sumar filas y columnas" onclick="computacion.sumar('table')"/>
-   <input type="button" value="Ocultar tabla" onclick="computacion.ocultar('table')"/>
-    <input type="button" value="Mostrar tabla" onclick="computacion.mostrar('table')"/>
-    <input type="button" value="Añadir una fila con append" onclick="computacion.añadirFila('table')"/>
+   <input type="button" value="Sumar filas y columnas" onclick="computacion.sumar('table')">
+   <input type="button" value="Ocultar tabla" onclick="computacion.ocultar('table')">
+    <input type="button" value="Mostrar tabla" onclick="computacion.mostrar('table')">
+    <input type="button" value="Añadir una fila con append" onclick="computacion.añadirFila('table')">
    
-   <p>Y ahora voy a incluir una lista de personajes de Breking Bad</p>
+   <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Y ahora voy a incluir una lista de personajes de Breking Bad</p>
    <ul>
-       <li>Walter White</li> 
-       <li>Jesse Pinkman</li>  
-       <li>Skyler White</li>
-       <li>Walter White, Jr.</li>
-       <li>Hank Schrader</li>
-       <li>Marie Schrader</li>
-       <li>Saul Goodman</li>
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Walter White</li> 
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Jesse Pinkman</li>  
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Skyler White</li>
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Walter White, Jr.</li>
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Hank Schrader</li>
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Marie Schrader</li>
+       <li>Etiqueta padre : &lt;UL&gt; elemento : &lt;LI&gt; valor: Saul Goodman</li>
    </ul>
    
-    <input type="button" value="Ocultar lista" onclick="computacion.ocultar('ul')"/>
-    <input type="button" value="Mostrar lista" onclick="computacion.mostrar('ul')"/>
+    <input type="button" value="Ocultar lista" onclick="computacion.ocultar('ul')">
+    <input type="button" value="Mostrar lista" onclick="computacion.mostrar('ul')">
    
-    <p>Recorramos todos los elementos del DOM y mostremos quién es el padre y que tipo de elemento es</p>
-    <input type="button" value="Ver" onclick="computacion.ver()"/>
-    <h4>ARBOL DOM</h4>
-    <p>Por último, vamos a destruir casi todo lo que hay en la página</p>
-    <input type="button" value="Eliminar h1" onclick="computacion.eliminar('h1')"/>
-    <input type="button" value="Eliminar h2" onclick="computacion.eliminar('h2')"/>
-    <input type="button" value="Eliminar h3" onclick="computacion.eliminar('h3')"/>
-    <input type="button" value="Eliminar parrafos" onclick="computacion.eliminar('p')"/>
-    <input type="button" value="Eliminar tabla" onclick="computacion.eliminar('table')"/>
-    <input type="button" value="Eliminar lista" onclick="computacion.eliminar('ul')"/>
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Recorramos todos los elementos del DOM y mostremos quién es el padre y que tipo de elemento es</p>
+    <input type="button" value="Ver" onclick="computacion.ver()">
+    <h4>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;H4&gt; valor: ARBOL DOM</h4>
+    <p>Etiqueta padre : &lt;MAIN&gt; elemento : &lt;P&gt; valor: Por último, vamos a destruir casi todo lo que hay en la página</p>
+    <input type="button" value="Eliminar h1" onclick="computacion.eliminar('h1')">
+    <input type="button" value="Eliminar h2" onclick="computacion.eliminar('h2')">
+    <input type="button" value="Eliminar h3" onclick="computacion.eliminar('h3')">
+    <input type="button" value="Eliminar parrafos" onclick="computacion.eliminar('p')">
+    <input type="button" value="Eliminar tabla" onclick="computacion.eliminar('table')">
+    <input type="button" value="Eliminar lista" onclick="computacion.eliminar('ul')">
     </main>
-    <footer>
-        <img src= "HTML5.png" alt= "HTML5 válido!" />
-        <img src= "CSS3.png" alt= "CSS3 válido!" />
+    <footer>Etiqueta padre : &lt;BODY&gt; elemento : &lt;FOOTER&gt; valor: 
+        <img src="HTML5.png" alt="HTML5 válido!">
+        <img src="CSS3.png" alt="CSS3 válido!">
     </footer>
-</body>
-</html>
+
+</body></html>
